@@ -142,7 +142,7 @@ public class SampleTest extends BaseClass {
                 .when()
                 .get("ping")
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .log().all()
                 .extract().response();
         attachment(RestAssured.baseURI,response);
