@@ -136,5 +136,16 @@ public class SampleTest extends BaseClass {
 
 
     }
+    @Test
+    public  void test08_getHealthCheck() {
+        response = RestAssured.given()
+                .when()
+                .get("ping")
+                .then()
+                .statusCode(200)
+                .log().all()
+                .extract().response();
+        attachment(RestAssured.baseURI,response);
+    }
 
 }
