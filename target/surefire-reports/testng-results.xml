@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-31T17:06:13 TRT" name="Command line suite" finished-at="2022-01-31T17:06:24 TRT" duration-ms="10333">
+    <groups>
+    </groups>
+    <test started-at="2022-01-31T17:06:13 TRT" name="Command line test" finished-at="2022-01-31T17:06:24 TRT" duration-ms="10333">
+      <class name="services.SampleTest">
+        <test-method is-config="true" signature="url()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:13 TRT" name="url" finished-at="2022-01-31T17:06:14 TRT" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="sample()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:14 TRT" name="sample" finished-at="2022-01-31T17:06:15 TRT" duration-ms="1736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample -->
+        <test-method signature="test01_postCreateToken()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:16 TRT" name="test01_postCreateToken" finished-at="2022-01-31T17:06:17 TRT" duration-ms="1486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01_postCreateToken -->
+        <test-method signature="test02_getBookingID()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:17 TRT" name="test02_getBookingID" finished-at="2022-01-31T17:06:18 TRT" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_getBookingID -->
+        <test-method signature="test03_postCreateBooking()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:18 TRT" name="test03_postCreateBooking" finished-at="2022-01-31T17:06:19 TRT" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_postCreateBooking -->
+        <test-method signature="test04_putUpdateBooking()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:19 TRT" name="test04_putUpdateBooking" finished-at="2022-01-31T17:06:20 TRT" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04_putUpdateBooking -->
+        <test-method signature="test05_getBookingDetails(int,int)[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:20 TRT" name="test05_getBookingDetails" data-provider="dataProvider" finished-at="2022-01-31T17:06:21 TRT" duration-ms="966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05_getBookingDetails -->
+        <test-method signature="test05_getBookingDetails(int,int)[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:21 TRT" name="test05_getBookingDetails" data-provider="dataProvider" finished-at="2022-01-31T17:06:22 TRT" duration-ms="974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05_getBookingDetails -->
+        <test-method signature="test06_patchPartialUpdateBooking()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:22 TRT" name="test06_patchPartialUpdateBooking" finished-at="2022-01-31T17:06:23 TRT" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test06_patchPartialUpdateBooking -->
+        <test-method signature="test07_deleteBooking()[pri:0, instance:services.SampleTest@3cc1435c]" started-at="2022-01-31T17:06:23 TRT" name="test07_deleteBooking" finished-at="2022-01-31T17:06:24 TRT" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test07_deleteBooking -->
+      </class> <!-- services.SampleTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
