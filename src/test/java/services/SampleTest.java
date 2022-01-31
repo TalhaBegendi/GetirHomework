@@ -86,8 +86,8 @@ public class SampleTest extends BaseClass {
     @DataProvider(name ="dataProvider")
     public  Object[][] dataProvider() {
     return new Object[][]{
-           {bookingID,200}
-          // {1,200}
+           {bookingID,200},
+          {1,200}
     };
     }
     @Test (dataProvider = "dataProvider")
@@ -100,7 +100,6 @@ public class SampleTest extends BaseClass {
                 .statusCode(statusCode)
                 .log().all()
                 .extract().response();
-        attachment(RestAssured.baseURI,response);
     }
     @Test
     public void test06_patchPartialUpdateBooking() throws IOException {
@@ -137,27 +136,10 @@ public class SampleTest extends BaseClass {
 
 
     }
-
-    @Test
-    public void sample() {
-        String baseUrl = "https://petstore.swagger.io/v2/store/inventory";
-        RequestSpecification restAssuredReq = RestAssured.given()
-                .header("Study","Test")
-                .log()
-                .all(true);
-        Response response = restAssuredReq.get(baseUrl);
-        //attachment(restAssuredReq, baseUrl, response);
-        Assert.assertEquals(response.getStatusCode(), 200);
-    }
-
-
     public String attachment(String baseUrl, Response response) {
         String html = "Url = " + baseUrl + "\n \n" +
-               // "Request Headers = " + ((RequestSpecificationImpl) httpRequest).getHeaders() + "\n \n" +
-               // "Request Body = " + ((RequestSpecificationImpl) httpRequest).getBody() + "\n \n" +
                 "Response Body = " + response.getBody().asString();
         Allure.addAttachment("Request Detail", html);
         return html;
-
     }
 }
