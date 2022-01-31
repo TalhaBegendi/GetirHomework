@@ -37,6 +37,7 @@ public class SampleTest extends BaseClass {
                 .log().all()
                 .extract().response();
         token = response.path("token").toString();
+        attachment(RestAssured.baseURI,response);
     }
     @Test
     public  void test02_getBookingID() {
@@ -47,6 +48,7 @@ public class SampleTest extends BaseClass {
                 .statusCode(200)
                 .log().all()
                 .extract().response();
+        attachment(RestAssured.baseURI,response);
     }
     @Test
     public  void test03_postCreateBooking() throws IOException {
@@ -62,6 +64,7 @@ public class SampleTest extends BaseClass {
                 .extract().response();
 
         bookingID = response.path("bookingid");
+        attachment(RestAssured.baseURI,response);
     }
     @Test
     public void test04_putUpdateBooking() throws IOException {
@@ -78,6 +81,7 @@ public class SampleTest extends BaseClass {
                 .statusCode(200)
                 .log().all()
                 .extract().response();
+        attachment(RestAssured.baseURI,response);
     }
     @DataProvider(name ="dataProvider")
     public  Object[][] dataProvider() {
@@ -96,6 +100,7 @@ public class SampleTest extends BaseClass {
                 .statusCode(statusCode)
                 .log().all()
                 .extract().response();
+        attachment(RestAssured.baseURI,response);
     }
     @Test
     public void test06_patchPartialUpdateBooking() throws IOException {
@@ -112,6 +117,7 @@ public class SampleTest extends BaseClass {
                 .statusCode(200)
                 .log().all()
                 .extract().response();
+        attachment(RestAssured.baseURI,response);
     }
     @Test
     public void test07_deleteBooking() throws IOException {
