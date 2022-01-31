@@ -136,10 +136,5 @@ public class SampleTest extends BaseClass {
 
 
     }
-    public String attachment(String baseUrl, Response response) {
-        String html = "Url = " + baseUrl + "\n \n" +
-                "Response Body = " + response.getBody().asString();
-        Allure.addAttachment("Request Detail", html);
-        return html;
-    }
+
 }
