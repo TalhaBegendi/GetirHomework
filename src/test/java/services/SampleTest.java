@@ -86,8 +86,8 @@ public class SampleTest extends BaseClass {
     @DataProvider(name ="dataProvider")
     public  Object[][] dataProvider() {
     return new Object[][]{
-           {bookingID,200},
-           {1,200}
+           {bookingID,200}
+          // {1,200}
     };
     }
     @Test (dataProvider = "dataProvider")
