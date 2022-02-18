@@ -136,7 +136,6 @@ public class SampleTest extends BaseClass {
 
 
     }
-    @AfterClass
     public  void test08_getHealthCheck() {
         response = RestAssured.given()
                 .when()
